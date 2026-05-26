@@ -1,6 +1,6 @@
 # Frontend Slides
 
-A Claude Code skill for creating stunning, animation-rich HTML presentations — from scratch or by converting PowerPoint files.
+A coding-agent skill for creating stunning HTML presentations — from scratch or by converting PowerPoint files. It is packaged as a Claude Code plugin, and the core `SKILL.md` can also be read by other coding agents with filesystem and shell access.
 
 ## What This Does
 
@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/ef57333e-f879-432a-afb9-180388982478
 
 ## Installation
 
-### Via Plugin Marketplace (Recommended)
+### Via Claude Code Plugin Marketplace (Recommended)
 
 Install directly from Claude Code:
 
@@ -32,7 +32,7 @@ Install directly from Claude Code:
 
 Then use it by typing `/frontend-slides` in Claude Code.
 
-### Manual Installation
+### Claude Code Manual Installation
 
 Copy the skill files to your Claude Code skills directory:
 
@@ -54,15 +54,30 @@ git clone https://github.com/zarazhangrui/frontend-slides.git ~/.claude/skills/f
 
 Then use it by typing `/frontend-slides` in Claude Code.
 
+### Other Coding Agents
+
+Agents such as Codex, Kimi Code, OpenCode, Gemini CLI, or other local coding assistants can use the same core skill by reading `SKILL.md` from this repo together with the referenced support files:
+
+- `STYLE_PRESETS.md`
+- `viewport-base.css`
+- `html-template.md`
+- `animation-patterns.md`
+- `bold-template-pack/`
+- `scripts/`
+
+The Claude Code plugin gives Claude Code a marketplace install flow and `/frontend-slides` command. Other agents usually do not use that command surface; they should follow `SKILL.md` directly inside a workspace.
+
 ## Usage
 
 ### Create a New Presentation
 
-```
+```text
 /frontend-slides
 
 > "I want to create a pitch deck for my AI startup"
 ```
+
+In non-Claude agents, ask the agent to use the Frontend Slides skill and point it at this repo or `SKILL.md`.
 
 The skill will:
 
@@ -537,16 +552,15 @@ Uses [Playwright](https://playwright.dev) to screenshot each slide at 1920×1080
 
 ## Requirements
 
-- [Claude Code](https://claude.ai/claude-code) CLI
+- A local coding agent with filesystem access and the ability to run shell commands
+- Claude Code is required only for the marketplace plugin install and `/frontend-slides` command
 - For PPT conversion: Python with `python-pptx` library
 - For URL deployment: Node.js + Vercel account (free)
 - For PDF export: Node.js (Playwright installs automatically)
 
 ## Credits
 
-Created by [@zarazhangrui](https://github.com/zarazhangrui) with Claude Code.
-
-Inspired by the "Vibe Coding" philosophy — building beautiful things without being a traditional software engineer.
+Created by [@zarazhangrui](https://github.com/zarazhangrui).
 
 ## License
 
