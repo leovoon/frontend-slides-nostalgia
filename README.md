@@ -6,6 +6,20 @@ This edition is intentionally **not** for polished professional/business decks. 
 
 Based on the original **Frontend Slides** skill by [Zara Zhang (@zarazhangrui)](https://github.com/zarazhangrui). This Nostalgia Edition reworks her project's styles and template pack into an old-web / old-PowerPoint aesthetic.
 
+## Screenshots
+
+A few representative nostalgia directions from the template pack:
+
+| Office 97 / PowerPoint | GeoCities / Web 1.0 |
+| --- | --- |
+| ![Office 97 Title Slide screenshot](docs/screenshots/office-97-title.png) | ![GeoCities Welcome Homepage screenshot](docs/screenshots/geocities-welcome.png) |
+| Navy title bar, teal AutoShapes, hard shadows, footer strip. | Star tile, rainbow Comic Sans header, marquee, visitor counter, badges. |
+
+| Frutiger Aero | System 7 Desktop |
+| --- | --- |
+| ![Frutiger Aero dashboard screenshot](docs/screenshots/aero-sky-dashboard.png) | ![System 7 Desktop screenshot](docs/screenshots/system-7-desktop.png) |
+| Sky/grass gradient, glossy bubbles, glass panel, green gel button. | Classic Mac menu bar, bitmap window chrome, pinstripe title bar, 1px borders. |
+
 ## What This Does
 
 **Frontend Slides** helps non-designers create zero-dependency web presentations without knowing CSS or JavaScript. It uses a "show, don't tell" approach: instead of asking you to describe your aesthetic preferences in words, it generates visual previews and lets you pick what feels right.
