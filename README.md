@@ -37,6 +37,27 @@ A few representative nostalgia directions from the template pack:
 
 This repo is meant to be used as a plain coding-agent skill, not as a Claude Code plugin.
 
+### Claude Code Manual Installation
+
+Copy the skill files to your Claude Code skills directory:
+
+```bash
+mkdir -p ~/.claude/skills/frontend-slides-nostalgia/scripts
+cp SKILL.md STYLE_PRESETS.md viewport-base.css html-template.md animation-patterns.md ~/.claude/skills/frontend-slides-nostalgia/
+cp -R nostalgia-template-pack ~/.claude/skills/frontend-slides-nostalgia/
+cp scripts/extract-pptx.py scripts/deploy.sh scripts/export-pdf.sh ~/.claude/skills/frontend-slides-nostalgia/scripts/
+```
+
+Or clone directly:
+
+```bash
+git clone https://github.com/leovoon/frontend-slides-nostalgia.git ~/.claude/skills/frontend-slides-nostalgia
+```
+
+Then use it in Claude Code as a manually installed skill. This repo does not provide a marketplace plugin.
+
+### Other Coding Agents
+
 Clone it wherever your agent can read files:
 
 ```bash
