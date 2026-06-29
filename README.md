@@ -1,6 +1,6 @@
 # Frontend Slides (Nostalgia Edition)
 
-A coding-agent skill for creating nostalgic, hand-crafted HTML presentations from scratch or by converting PowerPoint files. It is packaged as a Claude Code plugin, and the core `SKILL.md` can also be read by other coding agents with filesystem and shell access.
+A coding-agent skill for creating nostalgic, hand-crafted HTML presentations from scratch or by converting PowerPoint files. The core `SKILL.md` can be read by coding agents with filesystem and shell access.
 
 This edition is intentionally **not** for polished professional/business decks. It is for people who miss crafting PowerPoint slides by hand, making goofy homepage layouts, and letting a deck feel casual, personal, and visibly made.
 
@@ -33,49 +33,20 @@ A few representative nostalgia directions from the template pack:
 - **Authentic Ugly, Still Readable** — Comic Sans, WordArt, bevels, tiled backgrounds, marquees, counters, bitmap windows, and glossy gel buttons are allowed. Unreadable text is not.
 - **Fixed 16:9 Stage** — Every slide is authored at 1920×1080 and scaled as a whole to fit the viewport.
 
-## Installation
+## Installation / Use
 
-### Via Claude Code Custom Marketplace Source
+This repo is meant to be used as a plain coding-agent skill, not as a Claude Code plugin.
 
-Install directly from this repo. Run these as two separate Claude Code messages:
-
-```text
-/plugin marketplace add https://github.com/zarazhangrui/frontend-slides
-```
-
-Then:
-
-```text
-/plugin install frontend-slides@frontend-slides
-```
-
-Use it by typing `/frontend-slides:frontend-slides` in Claude Code.
-
-### Claude Code Manual Installation
-
-Copy the skill files to your Claude Code skills directory:
+Clone it wherever your agent can read files:
 
 ```bash
-mkdir -p ~/.claude/skills/frontend-slides/scripts
-cp SKILL.md STYLE_PRESETS.md viewport-base.css html-template.md animation-patterns.md ~/.claude/skills/frontend-slides/
-cp -R nostalgia-template-pack ~/.claude/skills/frontend-slides/
-cp scripts/extract-pptx.py scripts/deploy.sh scripts/export-pdf.sh ~/.claude/skills/frontend-slides/scripts/
+git clone https://github.com/leovoon/frontend-slides-nostalgia.git
 ```
 
-Or clone directly:
-
-```bash
-git clone https://github.com/zarazhangrui/frontend-slides.git ~/.claude/skills/frontend-slides
-```
-
-Then use `/frontend-slides` in Claude Code. Standalone skills are not namespaced.
-
-### Other Coding Agents
-
-Agents such as Codex, Kimi Code, OpenCode, Gemini CLI, or other local coding assistants can use the same core skill. Send the agent this repo link and ask it to use the Frontend Slides skill:
+Then ask your coding agent to use the Frontend Slides Nostalgia skill and point it at this repo:
 
 ```text
-https://github.com/zarazhangrui/frontend-slides
+Use the Frontend Slides Nostalgia skill from https://github.com/leovoon/frontend-slides-nostalgia
 ```
 
 If the agent can read repos or local files, it should start from `SKILL.md` and load only referenced support files it needs:
@@ -92,9 +63,7 @@ If the agent can read repos or local files, it should start from `SKILL.md` and 
 ### Create a New Presentation
 
 ```text
-/frontend-slides:frontend-slides
-
-> "Make me a casual old-PowerPoint deck about my weekend project"
+Use this repo's SKILL.md. Make me a casual old-PowerPoint deck about my weekend project.
 ```
 
 The skill will:
@@ -108,9 +77,7 @@ The skill will:
 ### Convert a PowerPoint
 
 ```text
-/frontend-slides:frontend-slides
-
-> "Convert my presentation.pptx to a web slideshow, but make it feel like PowerPoint 97"
+Use this repo's SKILL.md. Convert my presentation.pptx to a web slideshow, but make it feel like PowerPoint 97.
 ```
 
 The skill will:
@@ -221,7 +188,7 @@ Generated presentations can be:
 
 ## Credits
 
-- Original **Frontend Slides** skill, plugin architecture, and design philosophy by [Zara Zhang (@zarazhangrui)](https://github.com/zarazhangrui).
+- Original **Frontend Slides** skill architecture and design philosophy by [Zara Zhang (@zarazhangrui)](https://github.com/zarazhangrui).
 - Nostalgia Edition: restyled presets and template pack adapting that work into Office 97, GeoCities, Y2K/Aqua, and classic Mac aesthetics.
 
 ## License
