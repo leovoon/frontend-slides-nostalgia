@@ -1,39 +1,44 @@
 ---
 name: frontend-slides
-description: Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices.
+description: Create nostalgic, hand-crafted HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/class/personal deck with an old-web or old-PowerPoint feel. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices.
 ---
 
-# Frontend Slides
+# Frontend Slides (Nostalgia Edition)
 
-Create zero-dependency, animation-rich HTML presentations that run entirely in the browser.
+Create zero-dependency HTML presentations that feel hand-built in an old computer lab — Office 97 PowerPoint, GeoCities homepages, Y2K/Aqua gloss, and classic Macintosh System 7. This skill is intentionally **not** for professional, corporate, or business-polished decks.
 
 ## Core Principles
 
 1. **Zero Dependencies** — Single HTML files with inline CSS/JS. No npm, no build tools.
 2. **Show, Don't Tell** — Generate visual previews, not abstract choices. People discover what they want by seeing it.
-3. **Distinctive Design** — No generic "AI slop." Every presentation must feel custom-crafted.
-4. **Progressive Disclosure** — Read lightweight style indexes first. For bold templates, use small preview cards for style previews and load the full `design.md` only after the user picks that template.
-5. **Fixed 16:9 Stage (NON-NEGOTIABLE)** — Every deck uses a 1920×1080 slide canvas scaled as a whole to the viewport. Slides must stay 16:9 on every screen, including phones. Do not reflow slide content to fit the device.
+3. **Authentic Nostalgia, Not Generic Retro** — Every deck must read as a specific era anchored to a real artifact (PowerPoint 97, GeoCities, FrontPage, Netscape, Aqua, Vista/Frutiger Aero, System 7, Kid Pix, Memphis). Authentic ugly is welcome; vague undated "retro" slop is not.
+4. **Progressive Disclosure** — Read lightweight style indexes first. For nostalgia templates, use small preview cards for style previews and load the full `design.md` only after the user picks that template.
+5. **Fixed 16:9 Stage (NON-NEGOTIABLE)** — Every deck uses a 1920×1080 slide canvas scaled as a whole to the viewport. Slides must stay 16:9 on every screen, including phones. Do not reflow slide content to fit the device. Old-web fixed-width tables and desktop windows live *inside* the stage.
+6. **Readability Floor (NON-NEGOTIABLE)** — Authentic ugly, never unreadable. Body text ≥ 28px on the 1920×1080 stage, captions ≥ 18px, loud backgrounds get readable panels, and blink/marquee/sheen never carry primary meaning. Max two attention-grabbing animated effects per slide.
 
 ## Design Aesthetics
 
-You tend to converge toward generic, "on distribution" outputs. In frontend design, this creates what users call the "AI slop" aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.
+This skill commits to old-web and old-PowerPoint nostalgia. The risk here is not corporate "AI slop" but two opposite failures: (1) sanding the era into a tasteful modern "retro-inspired" deck, and (2) generic undated "retro" with no real artifact anchor. Avoid both. Commit to a specific era and make it look genuinely hand-built from that time.
+
+Four era families (see `STYLE_PRESETS.md` and the Nostalgia Template Pack):
+
+- **Office 97 / PowerPoint** — Arial / Times / Comic Sans / Impact, navy titles, teal AutoShapes, rainbow WordArt, Wingdings bullets, hard gray drop shadows, banded two-color gradients, bevel borders.
+- **GeoCities / Web 1.0** — tiled backgrounds, centered fixed-width tables, marquees, visitor counters, default blue/purple links, 88×31 badges, beveled gray buttons, Times/Comic Sans.
+- **Y2K / Aqua / Frutiger Aero** — chrome swooshes, gel pill buttons, candy progress bars, sky-to-grass gradients, bubbles, brushed metal, lens flares, glossy translucent panels.
+- **System 7 / Kid Pix / Memphis** — Mac menu bars and windows, 1px black borders, dithered gray (no blur), Kid Pix tool palettes and stamps, primary colors, Memphis confetti and squiggles, bitmap/integer type.
 
 Focus on:
 
-- Typography: Choose fonts that are beautiful, unique, and interesting. Avoid generic fonts like Arial and Inter; opt instead for distinctive choices that elevate the frontend's aesthetics.
-- Color & Theme: Commit to a cohesive aesthetic. Use CSS variables for consistency. Dominant colors with sharp accents outperform timid, evenly-distributed palettes. Draw from IDE themes and cultural aesthetics for inspiration.
-- Motion: Use animations for effects and micro-interactions. Prioritize CSS-only solutions for HTML. Use Motion library for React when available. Focus on high-impact moments: one well-orchestrated page load with staggered reveals (animation-delay) creates more delight than scattered micro-interactions.
-- Backgrounds: Create atmosphere and depth rather than defaulting to solid colors. Layer CSS gradients, use geometric patterns, or add contextual effects that match the overall aesthetic.
+- Typography: Use period fonts first (Arial, Times New Roman, Comic Sans MS, Impact, Tahoma, Verdana, Courier New, Chicago/Geneva-like). Always supply a fallback chain; consider era webfonts like `VT323`, `Press Start 2P`, `ChiKareGo2` for accents.
+- Color & Theme: Use period-correct palettes (web-safe primaries, Win9x system colors, Aqua blues, Kid Pix crayon colors). Banding, dithering, and harsh contrast are features, not bugs.
+- Motion: Imitate old software — PowerPoint fly-in/checkerboard/dissolve, marquee scroll, GIF-like frame steps, Aqua sheen sweep, Kid Pix stamp pops. No modern spring/bounce easing. Always include `prefers-reduced-motion` support.
+- Backgrounds: Tiled GIF-style patterns, banded gradients, stippled desktops, pinstripes, sky/grass scenes. Put readable panels over loud backgrounds.
 
-Avoid generic AI-generated aesthetics:
+Avoid:
 
-- Overused font families (Inter, Roboto, Arial, system fonts)
-- Cliched color schemes (particularly purple gradients on white backgrounds)
-- Predictable layouts and component patterns
-- Cookie-cutter design that lacks context-specific character
-
-Interpret creatively and make unexpected choices that feel genuinely designed for the context. Vary between light and dark themes, different fonts, different aesthetics. You still tend to converge on common choices (Space Grotesk, for example) across generations. Avoid this: it is critical that you think outside the box!
+- Modern slop: Inter / Roboto / Helvetica Neue as the primary voice, generic indigo `#6366f1`, purple-gradient-on-white, minimal SaaS hero sections, identical floating card grids, glassmorphism (except authentic Aqua/Aero gloss), smooth elegant shadows.
+- Generic retro slop: undated neon synthwave with no real artifact anchor.
+- Realistic or copyrighted clip art. Recreate the spirit with CSS shapes, glyphs, and simple marks, or use user-provided assets.
 
 ## Fixed Stage Rules
 
@@ -139,41 +144,41 @@ Do not ask the user whether they want options or a preset picker. The default di
 
 If the user already gave a vibe, use it. If they did not, infer the likely mood from the occasion, audience, content, and stakes. Keep the options diverse enough that the user can react visually instead of needing to articulate taste up front.
 
-If the user explicitly names a preset or bold template, honor that as one option and generate the remaining preview slots around it.
+If the user explicitly names a preset or nostalgia template, honor that as one option and generate the remaining preview slots around it.
 
-Read [STYLE_PRESETS.md](STYLE_PRESETS.md) for safe preset candidates. If [bold-template-pack/selection-index.json](bold-template-pack/selection-index.json) exists, read that compact index too, but do not read any `design.md` files yet.
+Read [STYLE_PRESETS.md](STYLE_PRESETS.md) for lightweight nostalgia preset candidates. If [nostalgia-template-pack/selection-index.json](nostalgia-template-pack/selection-index.json) exists, read that compact index too, but do not read any `design.md` files yet.
 
-| Mood                | Suggested Presets                                  |
-| ------------------- | -------------------------------------------------- |
-| Impressed/Confident | Bold Signal, Electric Studio, Dark Botanical       |
-| Excited/Energized   | Creative Voltage, Neon Cyber, Split Pastel         |
-| Calm/Focused        | Notebook Tabs, Paper & Ink, Swiss Modern           |
-| Inspired/Moved      | Dark Botanical, Vintage Editorial, Pastel Geometry |
+| Mood                  | Suggested Presets                                       |
+| --------------------- | ------------------------------------------------------ |
+| Earnest/Hand-built    | Office 97 Default, FrontPage Webmaster, System 7 Desktop |
+| Excited/Loud          | WordArt Rainbow, GeoCities Homepage, Under Construction |
+| Glossy/Optimistic     | Aqua Gel, Frutiger Aero, Y2K Chrome                    |
+| Playful/Crafty        | Comic Sans Classroom, Kid Pix Canvas, Memphis Computer Lab |
 
 **Preview mix rules:**
 
-- Generate 3 previews by default: 1 safe preset from `STYLE_PRESETS.md`, at least 1 bold template from `bold-template-pack/selection-index.json`, and 1 wildcard.
-- The wildcard may be either a second bold template or a self-generated custom design. Choose whichever creates the strongest, most useful contrast for the user's occasion, audience, mood, and content.
-- Do not force every expressive option to come from the template library. If the brief has a sharper, more specific design opportunity than the available templates, use the wildcard slot to design freely.
-- For conservative or high-stakes decks, make the safe preset especially restrained; choose a calm, higher-formality bold template; make the wildcard either another restrained template or a custom design that feels authoritative rather than decorative.
-- For expressive decks, keep the safe preset as a readable fallback; choose one strong bold template; make the wildcard adventurous, context-specific, and clearly different from both other previews.
-- If bold template matches feel weak, use the wildcard as a custom design or fall back to another safe preset instead of forcing a template.
+- Generate 3 previews by default: 1 lightweight preset from `STYLE_PRESETS.md`, at least 1 full nostalgia template from `nostalgia-template-pack/selection-index.json`, and 1 wildcard.
+- The wildcard may be either a second nostalgia template or a self-generated custom design built from the same old-web / old-PowerPoint spirit. Choose whichever creates the strongest, most useful contrast for the user's occasion, audience, mood, and content.
+- Keep the three previews from genuinely different eras when possible (e.g. one PowerPoint, one GeoCities, one System 7) so the user can react to distinct nostalgia flavors.
+- Do not force every option to come from the template library. If the brief has a sharper, more specific era opportunity than the available templates, use the wildcard slot to design freely — but still anchor it to a real artifact.
+- If a template match feels weak, use the wildcard as a custom era design or fall back to another preset instead of forcing a template.
 
 **Custom wildcard design rules:**
 
-- Follow the Design Aesthetics section above: no generic "AI slop", no default font/color/layout choices, no purple-gradient-on-white clichés, no cookie-cutter dashboard/card look.
-- Match the user's stated occasion, audience, mood/vibe, and content density. The custom design should feel authored for this deck, not merely "stylish."
-- Make a deliberate visual thesis: distinctive typography, a committed palette, a recognizable layout system, and one strong atmospheric or graphic device.
+- Follow the Design Aesthetics section above: commit to a specific era artifact, use period fonts/colors/layout, and avoid both modern slop and generic undated retro.
+- Match the user's stated occasion, audience, mood/vibe, and content density. The custom design should feel authored for this deck and this era.
+- Make a deliberate visual thesis: period typography, a committed period palette, a recognizable era layout system, and one strong period graphic device (WordArt, marquee, gel button, Mac window, etc.).
 - Keep it feasible for a full deck. The preview must imply a design system that can expand into section, content, quote, comparison, and closing slides.
+- Respect the readability floor (body ≥ 28px, captions ≥ 18px, readable panels over loud backgrounds).
 - Use fixed 1920×1080 stage rules and pass the same preview authenticity checks as every other option.
 - Never render "custom", "wildcard", "AI-generated", or design-process labels on the slide itself.
 
-**Bold template selection rules:**
+**Nostalgia template selection rules:**
 
-- Match user purpose and mood against `mood`, `tone`, `best_for`, `avoid_for`, `formality`, `density`, and `scheme`.
+- Match user purpose and mood against `taxonomy`, `mood`, `tone`, `best_for`, `avoid_for`, `formality`, `density`, and `scheme`.
 - Treat `best_for` examples as soft signals, not strict industry filters.
 - Keep the three previews genuinely different from each other.
-- After choosing bold template candidate(s), read only those candidate(s)' `preview.md` files from the `preview_md` paths in the selection index.
+- After choosing template candidate(s), read only those candidate(s)' `preview.md` files from the `preview_md` paths in the selection index.
 - Use `preview.md` only for title-slide previews. Do not read full `design.md` files until the user picks the final template.
 - Do not read or copy `template.html` unless the selected final `design.md` is missing a critical implementation detail.
 
@@ -214,7 +219,7 @@ If the user's stated needs are mixed, choose the closer of the two modes instead
 
 Never let high density become visual clutter. If a high-density slide starts to overflow, split it or redesign it into a clearer structure.
 
-If the user selected a bold template from `bold-template-pack`, read that one template's full `design.md` before generating. Do not read the other bold templates. Treat `design.md` as the design recipe:
+If the user selected a nostalgia template from `nostalgia-template-pack`, read that one template's full `design.md` before generating. Do not read the other templates. Treat `design.md` as the design recipe:
 
 - Preserve its fonts, palette, decorative vocabulary, spacing rhythm, and component grammar.
 - Generate the final deck as a fixed 1920×1080 stage scaled uniformly to the viewport, regardless of whether the source template originally used `deck-stage.js` or viewport-fluid CSS.
@@ -227,7 +232,7 @@ If the user selected a bold template from `bold-template-pack`, read that one te
 If the user selected a self-generated custom wildcard, treat that preview's CSS and layout as the design recipe:
 
 - Preserve its fonts, palette, decorative vocabulary, spacing rhythm, grid logic, and component grammar.
-- Expand the same visual system across the full deck. Do not switch to a preset or bold template after the user has chosen the custom direction.
+- Expand the same visual system across the full deck. Do not switch to a preset or nostalgia template after the user has chosen the custom direction.
 - Design any missing slide layouts from that system rather than importing patterns from another style.
 - Keep the output fixed-stage, single-file, and visually verified like every other deck.
 
@@ -368,10 +373,10 @@ This captures each slide as a screenshot and combines them into a PDF. Perfect f
 
 | File                                               | Purpose                                                              | When to Read              |
 | -------------------------------------------------- | -------------------------------------------------------------------- | ------------------------- |
-| [STYLE_PRESETS.md](STYLE_PRESETS.md)               | 12 curated visual presets with colors, fonts, and signature elements | Phase 2 (style selection) |
-| [bold-template-pack/selection-index.json](bold-template-pack/selection-index.json) | Compact bold template metadata for candidate selection | Phase 2 (style selection) |
-| [bold-template-pack/templates/*/preview.md](bold-template-pack/templates/) | Lightweight style cards for shortlisted bold title previews | Phase 2 after shortlisting |
-| [bold-template-pack/templates/*/design.md](bold-template-pack/templates/) | Detailed design-system docs for the selected bold template only | Phase 3 after user selection |
+| [STYLE_PRESETS.md](STYLE_PRESETS.md)               | 12 lightweight nostalgia presets with colors, fonts, and signature elements | Phase 2 (style selection) |
+| [nostalgia-template-pack/selection-index.json](nostalgia-template-pack/selection-index.json) | Compact nostalgia template metadata for candidate selection | Phase 2 (style selection) |
+| [nostalgia-template-pack/templates/*/preview.md](nostalgia-template-pack/templates/) | Lightweight style cards for shortlisted title previews | Phase 2 after shortlisting |
+| [nostalgia-template-pack/templates/*/design.md](nostalgia-template-pack/templates/) | Detailed design-system docs for the selected nostalgia template only | Phase 3 after user selection |
 | [viewport-base.css](viewport-base.css)             | Mandatory fixed-stage CSS — copy into every presentation             | Phase 3 (generation)      |
 | [html-template.md](html-template.md)               | HTML structure, JS features, code quality standards                  | Phase 3 (generation)      |
 | [animation-patterns.md](animation-patterns.md)     | CSS/JS animation snippets and effect-to-feeling guide                | Phase 3 (generation)      |

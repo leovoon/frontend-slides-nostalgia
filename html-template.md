@@ -12,8 +12,10 @@ Reference architecture for generating slide presentations. Every presentation fo
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentation Title</title>
 
-    <!-- Fonts: use Fontshare or Google Fonts — never system fonts -->
-    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=...">
+    <!-- Fonts: period-correct nostalgia fonts. Use real era faces with safe fallbacks
+         (Arial, Times New Roman, Comic Sans MS, Impact, Tahoma, Verdana, Courier New,
+         Chicago/Geneva-like). For era accents, load pixel/bitmap webfonts from Google Fonts. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap">
 
     <style>
         /* ===========================================
@@ -29,9 +31,10 @@ Reference architecture for generating slide presentations. Every presentation fo
             --accent: #00ffcc;
             --accent-glow: rgba(0, 255, 204, 0.3);
 
-            /* Typography — authored at 1920×1080 stage size */
-            --font-display: 'Clash Display', sans-serif;
-            --font-body: 'Satoshi', sans-serif;
+            /* Typography — authored at 1920×1080 stage size.
+               Pick period fonts per chosen era; always supply a fallback chain. */
+            --font-display: 'Arial Black', Impact, 'Arial Narrow', sans-serif;
+            --font-body: 'Times New Roman', Times, 'MS Sans Serif', Tahoma, serif;
             --title-size: 112px;
             --subtitle-size: 34px;
             --body-size: 28px;

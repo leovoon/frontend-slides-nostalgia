@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "frontend-slides",
-  "description": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files.",
+  "description": "Create nostalgic, hand-crafted HTML presentations from scratch or by converting PowerPoint files.",
   "owner": {
     "name": "zarazhangrui",
     "url": "https://github.com/zarazhangrui"
@@ -9,10 +9,10 @@
   "plugins": [
     {
       "name": "frontend-slides",
-      "description": "Zero-dependency HTML presentation generator with safe presets, bold template-library styles, PPT conversion, and anti-AI-slop design philosophy.",
+      "description": "Zero-dependency HTML presentation generator with old-web, old-PowerPoint, Y2K/Aqua, and classic Mac nostalgia styles.",
       "source": "./plugins/frontend-slides",
       "category": "productivity",
-      "tags": ["presentations", "slides", "html", "design", "powerpoint", "templates"]
+      "tags": ["presentations", "slides", "html", "nostalgia", "powerpoint", "geocities", "templates"]
     }
   ]
 }

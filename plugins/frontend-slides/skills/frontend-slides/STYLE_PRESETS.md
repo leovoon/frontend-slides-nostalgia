@@ -1,329 +1,402 @@
 # Style Presets Reference
 
-Curated visual styles for Frontend Slides. Each preset is inspired by real design references — no generic "AI slop" aesthetics. **Abstract shapes only — no illustrations.**
+Lightweight nostalgia presets for Frontend Slides. These are the quick, safe-to-reach styles used as one of the three Phase 2 preview options. For the heavier, fully specified design systems, use the [Nostalgia Template Pack](nostalgia-template-pack/selection-index.json).
+
+This skill is intentionally **not** for professional or business-polished decks. Every preset is anchored to a real old-web or old-PowerPoint artifact. **Abstract shapes, CSS-drawn ornament, and period glyphs only — no realistic clip art, no copyrighted assets.**
 
 **Viewport CSS:** For mandatory base styles, see [viewport-base.css](viewport-base.css). Include in every presentation.
 
+**Readability floor (applies to every preset):** authentic ugly is welcome, unreadable is not. Body text ≥ 28px on the 1920×1080 stage, captions ≥ 18px, loud backgrounds get readable panels, and blink/marquee/sheen never carry primary meaning.
+
 ---
 
-## Dark Themes
+## Office 97 / PowerPoint
 
-### 1. Bold Signal
+### 1. Office 97 Default
 
-**Vibe:** Confident, bold, modern, high-impact
+**Vibe:** Hand-built PowerPoint from a school or office computer, earnest and awkward
 
-**Layout:** Colored card on dark gradient. Number top-left, navigation top-right, title bottom-left.
+**Layout:** Navy title across the top, thick horizontal rule, big bullet list, gray footer with date | filename | slide number.
 
 **Typography:**
-- Display: `Archivo Black` (900)
-- Body: `Space Grotesk` (400/500)
+- Display: `Arial Black` (900)
+- Body: `Arial` / `Times New Roman`
+- Accents: Wingdings/Webdings-style glyphs for bullets
 
 **Colors:**
 ```css
 :root {
-    --bg-primary: #1a1a1a;
-    --bg-gradient: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
-    --card-bg: #FF5722;
-    --text-primary: #ffffff;
-    --text-on-card: #1a1a1a;
+    --bg-primary: #ffffff;
+    --title-navy: #000080;
+    --accent-teal: #008080;
+    --shadow-gray: #808080;
+    --text-black: #000000;
 }
 ```
 
 **Signature Elements:**
-- Bold colored card as focal point (orange, coral, or vibrant accent)
-- Large section numbers (01, 02, etc.)
-- Navigation breadcrumbs with active/inactive opacity states
-- Grid-based layout for precise alignment
+- Navy title bar and thick divider rule
+- Teal AutoShape callouts with hard gray drop shadows
+- Wingdings bullet list (●, ○, ■, ✪)
+- Footer strip with date, filename, slide number
 
 ---
 
-### 2. Electric Studio
+### 2. PowerPoint Blue Daybreak
 
-**Vibe:** Bold, clean, professional, high contrast
+**Vibe:** Classic two-color gradient deck, stagey and confident
 
-**Layout:** Split panel—white top, blue bottom. Brand marks in corners.
+**Layout:** Full-bleed blue diagonal gradient, centered white title with gray shadow, lower outlined content well.
 
 **Typography:**
-- Display: `Manrope` (800)
-- Body: `Manrope` (400/500)
+- Display: `Arial Black`
+- Body: `Arial` / `Verdana`
 
 **Colors:**
 ```css
 :root {
-    --bg-dark: #0a0a0a;
-    --bg-white: #ffffff;
-    --accent-blue: #4361ee;
-    --text-dark: #0a0a0a;
+    --grad-from: #003399;
+    --grad-to: #0066cc;
     --text-light: #ffffff;
+    --rule-cyan: #00ffff;
+    --shadow-gray: #808080;
 }
 ```
 
 **Signature Elements:**
-- Two-panel vertical split
-- Accent bar on panel edge
-- Quote typography as hero element
-- Minimal, confident spacing
+- Banded diagonal gradient with visible stops
+- Drop-shadow white title
+- Outlined content box, corner page number
+- Checkerboard/dissolve-style intro feel
 
 ---
 
-### 3. Creative Voltage
+### 3. WordArt Rainbow
 
-**Vibe:** Bold, creative, energetic, retro-modern
+**Vibe:** Loud, silly, maximal slide-art chaos
 
-**Layout:** Split panels—electric blue left, dark right. Script accents.
+**Layout:** Poster-style centered WordArt object, sparse beveled caption labels.
 
 **Typography:**
-- Display: `Syne` (700/800)
-- Mono: `Space Mono` (400/700)
+- Display: `Impact` / `Arial Black`
+- Accents: `Comic Sans MS`
 
 **Colors:**
 ```css
 :root {
-    --bg-primary: #0066ff;
-    --bg-dark: #1a1a2e;
-    --accent-neon: #d4ff00;
-    --text-light: #ffffff;
+    --bg-primary: #ffffff;
+    --burst-yellow: #ffcc00;
+    --arrow-red: #ff0000;
+    --outline-black: #000000;
 }
 ```
 
 **Signature Elements:**
-- Electric blue + neon yellow contrast
-- Halftone texture patterns
-- Neon badges/callouts
-- Script typography for creative flair
+- Rainbow arched WordArt headline with thick black outline
+- Explosion starburst badge
+- 3D extrude shadow duplicate
+- Beveled caption plaque
 
 ---
 
-### 4. Dark Botanical
+## GeoCities / Web 1.0
 
-**Vibe:** Elegant, sophisticated, artistic, premium
+### 4. GeoCities Homepage
 
-**Layout:** Centered content on dark. Abstract soft shapes in corner.
+**Vibe:** Excited, busy, handmade personal homepage
+
+**Layout:** Tiled star background, centered ~760px content table, marquee strip, badge/counter footer.
 
 **Typography:**
-- Display: `Cormorant` (400/600) — elegant serif
-- Body: `IBM Plex Sans` (300/400)
+- Body: `Times New Roman`
+- Fun: `Comic Sans MS`
+- Mono: `Courier New`
 
 **Colors:**
 ```css
 :root {
-    --bg-primary: #0f0f0f;
-    --text-primary: #e8e4df;
-    --text-secondary: #9a9590;
-    --accent-warm: #d4a574;
-    --accent-pink: #e8b4b8;
-    --accent-gold: #c9b896;
+    --bg-tile: #000000;
+    --link-blue: #0000ee;
+    --visited-purple: #551a8b;
+    --marquee-yellow: #ffff00;
+    --silver: #c0c0c0;
 }
 ```
 
 **Signature Elements:**
-- Abstract soft gradient circles (blurred, overlapping)
-- Warm color accents (pink, gold, terracotta)
-- Thin vertical accent lines
-- Italic signature typography
-- **No illustrations—only abstract CSS shapes**
+- Black star tile behind a centered table
+- Scrolling marquee welcome strip
+- Visitor counter (odometer)
+- Blue/purple link list, 88×31 badge row
 
 ---
 
-## Light Themes
+### 5. FrontPage Webmaster
 
-### 5. Notebook Tabs
+**Vibe:** Structured webmaster pride, directory energy
 
-**Vibe:** Editorial, organized, elegant, tactile
-
-**Layout:** Cream paper card on dark background. Colorful tabs on right edge.
+**Layout:** Silver page shell, left beveled nav buttons, main bordered table with default links.
 
 **Typography:**
-- Display: `Bodoni Moda` (400/700) — classic editorial
-- Body: `DM Sans` (400/500)
+- Body: `Times New Roman` / `Arial`
+- UI: `Verdana`
 
 **Colors:**
 ```css
 :root {
-    --bg-outer: #2d2d2d;
-    --bg-page: #f8f6f1;
-    --text-primary: #1a1a1a;
-    --tab-1: #98d4bb; /* Mint */
-    --tab-2: #c7b8ea; /* Lavender */
-    --tab-3: #f4b8c5; /* Pink */
-    --tab-4: #a8d8ea; /* Sky */
-    --tab-5: #ffe6a7; /* Cream */
+    --page-silver: #c0c0c0;
+    --cell-bg: #ffffff;
+    --link-blue: #0000ee;
+    --bevel-light: #ffffff;
+    --bevel-dark: #808080;
 }
 ```
 
 **Signature Elements:**
-- Paper container with subtle shadow
-- Colorful section tabs on right edge (vertical text)
-- Binder hole decorations on left
-- Tab text must scale with viewport: `font-size: clamp(0.5rem, 1vh, 0.7rem)`
+- Left raised-bevel navigation buttons
+- Visible bordered data table
+- Default underlined hyperlink styling
+- Rainbow divider rule, webmaster footer
 
 ---
 
-### 6. Pastel Geometry
+### 6. Under Construction
 
-**Vibe:** Friendly, organized, modern, approachable
+**Vibe:** Loud, unfinished, funny work-in-progress
 
-**Layout:** White card on pastel background. Vertical pills on right edge.
+**Layout:** Hazard-stripe top/bottom bars, big centered warning panel, beveled status table.
 
 **Typography:**
-- Display: `Plus Jakarta Sans` (700/800)
-- Body: `Plus Jakarta Sans` (400/500)
+- Display: `Impact`
+- Body: `Comic Sans MS` / `Courier New`
 
 **Colors:**
 ```css
 :root {
-    --bg-primary: #c8d9e6;
-    --card-bg: #faf9f7;
-    --pill-pink: #f0b4d4;
-    --pill-mint: #a8d4c4;
-    --pill-sage: #5a7c6a;
-    --pill-lavender: #9b8dc4;
-    --pill-violet: #7c6aad;
+    --bg-dark: #000000;
+    --caution-yellow: #ffff00;
+    --danger-red: #ff0000;
+    --silver: #c0c0c0;
 }
 ```
 
 **Signature Elements:**
-- Rounded card with soft shadow
-- **Vertical pills on right edge** with varying heights (like tabs)
-- Consistent pill width, heights: short → medium → tall → medium → short
-- Download/action icon in corner
+- Yellow/black hazard stripe borders
+- Blinking caution label (chrome only)
+- CSS-drawn construction worker
+- "Come back soon!" footer
 
 ---
 
-### 7. Split Pastel
+## Y2K / Aqua / Frutiger Aero
 
-**Vibe:** Playful, modern, friendly, creative
+### 7. Aqua Gel
 
-**Layout:** Two-color vertical split (peach left, lavender right).
+**Vibe:** Glossy, optimistic, friendly early-2000s Mac
+
+**Layout:** Pinstripe background, centered boot panel, gel title, candy progress bar, toolbar footer.
 
 **Typography:**
-- Display: `Outfit` (700/800)
-- Body: `Outfit` (400/500)
+- Display/Body: `Lucida Grande` / `Tahoma` / `Verdana`
 
 **Colors:**
 ```css
 :root {
-    --bg-peach: #f5e6dc;
-    --bg-lavender: #e4dff0;
-    --text-dark: #1a1a1a;
-    --badge-mint: #c8f0d8;
-    --badge-yellow: #f0f0c8;
-    --badge-pink: #f0d4e0;
+    --gel-hi: #bfe3ff;
+    --aqua-blue: #1a73e8;
+    --pinstripe: #e8edf2;
+    --graphite: #6e7177;
 }
 ```
 
 **Signature Elements:**
-- Split background colors
-- Playful badge pills with icons
-- Grid pattern overlay on right panel
-- Rounded CTA buttons
+- Aqua gel pill buttons with white highlight bands
+- Candy-stripe progress bar
+- Pinstripe background
+- Traffic-light window dots
 
 ---
 
-### 8. Vintage Editorial
+### 8. Frutiger Aero
 
-**Vibe:** Witty, confident, editorial, personality-driven
+**Vibe:** Fresh, glossy, nature-meets-tech optimism
 
-**Layout:** Centered content on cream. Abstract geometric shapes as accent.
+**Layout:** Sky-to-grass gradient, floating bubbles, translucent glass dashboard cards.
 
 **Typography:**
-- Display: `Fraunces` (700/900) — distinctive serif
-- Body: `Work Sans` (400/500)
+- Display/Body: `Segoe UI` / `Tahoma` / `Verdana`
 
 **Colors:**
 ```css
 :root {
-    --bg-cream: #f5f3ee;
-    --text-primary: #1a1a1a;
-    --text-secondary: #555;
-    --accent-warm: #e8d4c0;
+    --aero-sky: #38b6ff;
+    --aero-deep: #0066cc;
+    --aero-leaf: #7ed957;
+    --aero-grass: #2faa3f;
+    --glass: rgba(255,255,255,0.45);
 }
 ```
 
 **Signature Elements:**
-- Abstract geometric shapes (circle outline + line + dot)
-- Bold bordered CTA boxes
-- Witty, conversational copy style
-- **No illustrations—only geometric CSS shapes**
+- Sky gradient into green floor
+- Glossy glass stat cards
+- Floating bubbles and gloss tabs
+- Leaf-green badges
 
 ---
 
-## Specialty Themes
+### 9. Y2K Chrome
 
-### 9. Neon Cyber
+**Vibe:** Futuristic dotcom chrome, slick and cheesy
 
-**Vibe:** Futuristic, techy, confident
+**Layout:** Graphite/blue background, diagonal chrome swoosh, cyan lens flare, italic all-caps headline.
 
-**Typography:** `Clash Display` + `Satoshi` (Fontshare)
+**Typography:**
+- Display: `Arial Black` / Eurostile-like fallback
+- Body: `Tahoma`
 
-**Colors:** Deep navy (#0a0f1c), cyan accent (#00ffcc), magenta (#ff00aa)
+**Colors:**
+```css
+:root {
+    --bg-graphite: #1b2330;
+    --chrome-hi: #f4f8fb;
+    --chrome-lo: #8a93a0;
+    --electric: #00e5ff;
+    --magenta: #ff3cac;
+}
+```
 
-**Signature:** Particle backgrounds, neon glow, grid patterns
-
----
-
-### 10. Terminal Green
-
-**Vibe:** Developer-focused, hacker aesthetic
-
-**Typography:** `JetBrains Mono` (monospace only)
-
-**Colors:** GitHub dark (#0d1117), terminal green (#39d353)
-
-**Signature:** Scan lines, blinking cursor, code syntax styling
-
----
-
-### 11. Swiss Modern
-
-**Vibe:** Clean, precise, Bauhaus-inspired
-
-**Typography:** `Archivo` (800) + `Nunito` (400)
-
-**Colors:** Pure white, pure black, red accent (#ff3300)
-
-**Signature:** Visible grid, asymmetric layouts, geometric shapes
+**Signature Elements:**
+- Metallic chrome swoosh ribbon
+- Cyan lens flare and glow capsules
+- Italic chrome-fill headline
+- Scanline HUD rule
 
 ---
 
-### 12. Paper & Ink
+## System 7 / Kid Pix / Memphis
 
-**Vibe:** Editorial, literary, thoughtful
+### 10. System 7 Desktop
 
-**Typography:** `Cormorant Garamond` + `Source Serif 4`
+**Vibe:** Classic Macintosh bitmap UI, precise and plain
 
-**Colors:** Warm cream (#faf9f7), charcoal (#1a1a1a), crimson accent (#c41e3a)
+**Layout:** Stippled teal desktop, white menu bar, overlapping black-outlined windows.
 
-**Signature:** Drop caps, pull quotes, elegant horizontal rules
+**Typography:**
+- UI: `Chicago` (or `ChiKareGo2`)
+- Body: `Geneva`
+- Mono: `Monaco`
+
+**Colors:**
+```css
+:root {
+    --desktop-teal: #5b8c8c;
+    --mac-paper: #ffffff;
+    --mac-ink: #000000;
+    --mac-gray: #dddddd;
+}
+```
+
+**Signature Elements:**
+- Mac menu bar with Apple menu
+- Pinstripe title bars, close box
+- 1px black window borders, no blur
+- Dithered gray scrollbars and fills
+
+---
+
+### 11. Kid Pix Canvas
+
+**Vibe:** Playful, childlike paint-program mess
+
+**Layout:** White canvas inside a Mac window, left tool palette, bottom color strip, stamped icons.
+
+**Typography:**
+- UI: `Chicago`
+- Fun: `Comic Sans MS`
+- Body: `Geneva`
+
+**Colors:**
+```css
+:root {
+    --kp-red: #ed1c24;
+    --kp-blue: #0066cc;
+    --kp-yellow: #ffde00;
+    --kp-green: #00a651;
+    --canvas: #ffffff;
+}
+```
+
+**Signature Elements:**
+- Tool palette of square bitmap buttons
+- Stamp stickers with rotation jitter
+- Spray-paint speckle texture
+- Bottom color strip
+
+---
+
+### 12. Memphis Computer Lab
+
+**Vibe:** Bright Memphis classroom graphics and desktop-publishing joy
+
+**Layout:** Centered worksheet card, confetti frame, bold fill-in-the-blank regions.
+
+**Typography:**
+- Display: `Arial Black`
+- Fun: `Comic Sans MS`
+- Body: `Geneva`
+
+**Colors:**
+```css
+:root {
+    --mem-coral: #ff5c5c;
+    --mem-mint: #6be0c9;
+    --mem-lemon: #ffd23f;
+    --mem-grape: #7b5ea7;
+    --ink: #1a1a1a;
+}
+```
+
+**Signature Elements:**
+- Primary-color confetti shapes and squiggles
+- Terrazzo dot scatter
+- Worksheet blanks and tilted labels
+- Black-outline cards
 
 ---
 
 ## Font Pairing Quick Reference
 
-| Preset | Display Font | Body Font | Source |
-|--------|--------------|-----------|--------|
-| Bold Signal | Archivo Black | Space Grotesk | Google |
-| Electric Studio | Manrope | Manrope | Google |
-| Creative Voltage | Syne | Space Mono | Google |
-| Dark Botanical | Cormorant | IBM Plex Sans | Google |
-| Notebook Tabs | Bodoni Moda | DM Sans | Google |
-| Pastel Geometry | Plus Jakarta Sans | Plus Jakarta Sans | Google |
-| Split Pastel | Outfit | Outfit | Google |
-| Vintage Editorial | Fraunces | Work Sans | Google |
-| Neon Cyber | Clash Display | Satoshi | Fontshare |
-| Terminal Green | JetBrains Mono | JetBrains Mono | JetBrains |
+| Preset | Display Font | Body Font | Era |
+|--------|--------------|-----------|-----|
+| Office 97 Default | Arial Black | Arial / Times New Roman | Office 97 |
+| PowerPoint Blue Daybreak | Arial Black | Arial / Verdana | Office 97 |
+| WordArt Rainbow | Impact | Comic Sans MS | Office 97 |
+| GeoCities Homepage | Comic Sans MS | Times New Roman | Web 1.0 |
+| FrontPage Webmaster | Arial | Times New Roman / Verdana | Web 1.0 |
+| Under Construction | Impact | Comic Sans MS / Courier New | Web 1.0 |
+| Aqua Gel | Lucida Grande | Tahoma / Verdana | Y2K / Aqua |
+| Frutiger Aero | Segoe UI | Tahoma / Verdana | Frutiger Aero |
+| Y2K Chrome | Arial Black | Tahoma | Y2K |
+| System 7 Desktop | Chicago | Geneva | System 7 |
+| Kid Pix Canvas | Chicago | Geneva / Comic Sans MS | Kid Pix |
+| Memphis Computer Lab | Arial Black | Geneva | Memphis |
+
+> Period fonts are not reliably web-served. Always provide a fallback chain (e.g. `"MS Sans Serif", Tahoma, Verdana, sans-serif`) and consider pixel/era webfonts like `VT323`, `Press Start 2P`, or `ChiKareGo2` for accents.
 
 ---
 
-## DO NOT USE (Generic AI Patterns)
+## DO NOT USE (Modern Slop Patterns)
 
-**Fonts:** Inter, Roboto, Arial, system fonts as display
+**Fonts:** Inter, Roboto, Helvetica Neue, generic modern display fonts as the primary voice
 
-**Colors:** `#6366f1` (generic indigo), purple gradients on white
+**Colors:** generic indigo `#6366f1`, tasteful muted palettes, purple gradients on white
 
-**Layouts:** Everything centered, generic hero sections, identical card grids
+**Layouts:** minimal SaaS hero sections, identical floating card grids, elegant editorial whitespace
 
-**Decorations:** Realistic illustrations, gratuitous glassmorphism, drop shadows without purpose
+**Decorations:** glassmorphism (except authentic Aqua/Aero gloss), soft modern shadows, smooth elegant gradients on Office 97 presets, realistic or copyrighted clip art
+
+**Generic "retro" slop:** undated neon synthwave with no real artifact anchor. Every preset must read as a specific era, not vaguely "retro."
 
 ---
 
@@ -343,4 +416,18 @@ right: calc(-1 * clamp(28px, 3.5vw, 44px));  /* Works */
 margin-left: calc(-1 * min(10vw, 100px));     /* Works */
 ```
 
-CSS does not allow a leading `-` before function names. The browser silently discards the entire declaration — no error, the element just appears in the wrong position. **Always use `calc(-1 * ...)` to negate CSS function values.**
+CSS does not allow a leading `-` before function names. The browser silently discards the entire declaration. **Always use `calc(-1 * ...)` to negate CSS function values.**
+
+### Bevels Over Soft Shadows
+
+For Office 97, Web 1.0, and System 7 presets, use hard bevels and offset shadows, not blurred modern shadows:
+```css
+/* Win9x raised bevel */
+border: 2px solid #fff;
+border-right-color: #000;
+border-bottom-color: #000;
+box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #404040;
+
+/* Hard offset drop shadow (no blur) */
+box-shadow: 2px 2px 0 #000;
+```

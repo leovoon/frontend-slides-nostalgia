@@ -1,0 +1,460 @@
+{
+  "schema_version": 2,
+  "pack_name": "Nostalgia Template Pack",
+  "directory": "nostalgia-template-pack",
+  "template_count": 16,
+  "usage": {
+    "selection": "Read this compact index first to shortlist period-specific nostalgia templates from metadata.",
+    "previews": "For title-slide previews, read only the preview_md files for shortlisted candidates.",
+    "final_generation": "After the user chooses a nostalgia template, read exactly that template design_md before generating the full deck.",
+    "never": "Do not bulk-read templates/*/design.md and do not read template.html unless a selected design.md is missing a critical implementation detail."
+  },
+  "frontend_slides_policy": {
+    "layout_model": "fixed-stage",
+    "canvas_width": 1920,
+    "canvas_height": 1080,
+    "scaling": "scale-stage-to-viewport",
+    "mobile_behavior": "preserve 16:9 stage; letterbox or pillarbox instead of reflowing slide content",
+    "readability_floor": "Authentic ugly is welcome; unreadable is not. Main body text >= 28px, captions >= 18px."
+  },
+  "taxonomies": [
+    "Office 97 / PowerPoint",
+    "GeoCities / Web 1.0",
+    "Y2K / Aqua / Frutiger Aero",
+    "System 7 / Kid Pix / Memphis"
+  ],
+  "templates": [
+    {
+      "slug": "office-97-title",
+      "name": "Office 97 Title Slide",
+      "taxonomy": "Office 97 / PowerPoint",
+      "preset": "office-97-default",
+      "tagline": "Default PowerPoint title-and-bullets with navy titles, teal AutoShapes, Arial, and hard gray shadows.",
+      "mood": [
+        "office",
+        "default",
+        "handmade",
+        "nostalgic"
+      ],
+      "tone": [
+        "awkward",
+        "earnest",
+        "workshop",
+        "classic"
+      ],
+      "formality": "low",
+      "density": "medium",
+      "scheme": "light",
+      "best_for": "Talks that should feel like a hand-built PowerPoint from a school computer lab, office lunch-and-learn, family slideshow, or scrappy founder demo.",
+      "avoid_for": "Decks needing contemporary polish, luxury restraint, or invisible design.",
+      "preview_md": "nostalgia-template-pack/templates/office-97-title/preview.md",
+      "design_md": "nostalgia-template-pack/templates/office-97-title/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "powerpoint-blue-daybreak",
+      "name": "PowerPoint Blue Daybreak",
+      "taxonomy": "Office 97 / PowerPoint",
+      "preset": "powerpoint-daybreak",
+      "tagline": "Blue diagonal preset gradient, white text, harsh banding, and boxed content panels.",
+      "mood": [
+        "presentation",
+        "gradient",
+        "corporate-casual",
+        "nostalgic"
+      ],
+      "tone": [
+        "earnest",
+        "confident",
+        "dated",
+        "stagey"
+      ],
+      "formality": "medium-low",
+      "density": "medium",
+      "scheme": "dark",
+      "best_for": "Keynote-style nostalgia, school projects, tech-history decks, and any deck where blue gradient backgrounds are the joke and the charm.",
+      "avoid_for": "Dense reports or decks that cannot tolerate saturated backgrounds.",
+      "preview_md": "nostalgia-template-pack/templates/powerpoint-blue-daybreak/preview.md",
+      "design_md": "nostalgia-template-pack/templates/powerpoint-blue-daybreak/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "wordart-rainbow-splash",
+      "name": "WordArt Rainbow Splash",
+      "taxonomy": "Office 97 / PowerPoint",
+      "preset": "powerpoint-wordart",
+      "tagline": "Rainbow arched WordArt, starburst badges, 3D extrusion shadows, and unapologetic slide-art chaos.",
+      "mood": [
+        "loud",
+        "silly",
+        "maximal",
+        "crafty"
+      ],
+      "tone": [
+        "celebratory",
+        "goofy",
+        "chaotic",
+        "handmade"
+      ],
+      "formality": "low",
+      "density": "low",
+      "scheme": "light",
+      "best_for": "Openers, section breaks, playful announcements, awards, retrospectives, and decks that want a big nostalgic grin.",
+      "avoid_for": "Reading-heavy slides or somber topics.",
+      "preview_md": "nostalgia-template-pack/templates/wordart-rainbow-splash/preview.md",
+      "design_md": "nostalgia-template-pack/templates/wordart-rainbow-splash/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "comic-sans-casual",
+      "name": "Comic Sans Casual Deck",
+      "taxonomy": "Office 97 / PowerPoint",
+      "preset": "comic-sans-classroom",
+      "tagline": "Pale yellow slides, Comic Sans, speech bubbles, clip-art-ish symbols, and friendly chaos.",
+      "mood": [
+        "casual",
+        "classroom",
+        "friendly",
+        "silly"
+      ],
+      "tone": [
+        "warm",
+        "unserious",
+        "homemade",
+        "inviting"
+      ],
+      "formality": "very-low",
+      "density": "medium",
+      "scheme": "light",
+      "best_for": "Teaching, workshops, family decks, hobby talks, and anything intentionally non-corporate.",
+      "avoid_for": "Anything where Comic Sans would undermine user trust.",
+      "preview_md": "nostalgia-template-pack/templates/comic-sans-casual/preview.md",
+      "design_md": "nostalgia-template-pack/templates/comic-sans-casual/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "geocities-welcome",
+      "name": "GeoCities Welcome Homepage",
+      "taxonomy": "GeoCities / Web 1.0",
+      "preset": "geocities-homepage",
+      "tagline": "Tiled star background, centered table, marquee welcome, visitor counter, and best-viewed badges.",
+      "mood": [
+        "old-web",
+        "personal",
+        "busy",
+        "excited"
+      ],
+      "tone": [
+        "enthusiastic",
+        "amateur",
+        "maximal",
+        "sweet"
+      ],
+      "formality": "very-low",
+      "density": "medium",
+      "scheme": "dark",
+      "best_for": "Personal intros, creator decks, retrospectives, web-history talks, and casual decks that should feel handmade online.",
+      "avoid_for": "Decks requiring restraint, neutrality, or quiet reading.",
+      "preview_md": "nostalgia-template-pack/templates/geocities-welcome/preview.md",
+      "design_md": "nostalgia-template-pack/templates/geocities-welcome/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "under-construction",
+      "name": "Under Construction Page",
+      "taxonomy": "GeoCities / Web 1.0",
+      "preset": "under-construction",
+      "tagline": "Hazard stripes, blinking sign energy, shovel-man silhouette, and come-back-soon sincerity.",
+      "mood": [
+        "loud",
+        "unfinished",
+        "funny",
+        "nostalgic"
+      ],
+      "tone": [
+        "apologetic",
+        "excited",
+        "chaotic",
+        "webmaster"
+      ],
+      "formality": "very-low",
+      "density": "low",
+      "scheme": "dark",
+      "best_for": "Roadmap, in-progress ideas, TODO sections, prototypes, and humorous pause slides.",
+      "avoid_for": "Final executive messaging or anything that must feel complete.",
+      "preview_md": "nostalgia-template-pack/templates/under-construction/preview.md",
+      "design_md": "nostalgia-template-pack/templates/under-construction/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "frontpage-table-web",
+      "name": "FrontPage Table Web",
+      "taxonomy": "GeoCities / Web 1.0",
+      "preset": "frontpage-webmaster",
+      "tagline": "Visible table borders, beveled side navigation, default links, spacer-GIF geometry, and webmaster pride.",
+      "mood": [
+        "webmaster",
+        "structured",
+        "amateur",
+        "busy"
+      ],
+      "tone": [
+        "practical",
+        "nostalgic",
+        "directory-like",
+        "DIY"
+      ],
+      "formality": "low",
+      "density": "high",
+      "scheme": "light",
+      "best_for": "Agendas, link/resource pages, comparative lists, docs-as-slides, and web project storytelling.",
+      "avoid_for": "Cinematic, low-density keynote moments.",
+      "preview_md": "nostalgia-template-pack/templates/frontpage-table-web/preview.md",
+      "design_md": "nostalgia-template-pack/templates/frontpage-table-web/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "badge-wall-88x31",
+      "name": "88\u00d731 Badge Wall",
+      "taxonomy": "GeoCities / Web 1.0",
+      "preset": "badge-wall",
+      "tagline": "Dense grid of tiny badges, awards, Netscape buttons, HTML pride, and ring navigation.",
+      "mood": [
+        "collector",
+        "busy",
+        "internet",
+        "playful"
+      ],
+      "tone": [
+        "proud",
+        "scrappy",
+        "communal",
+        "fun"
+      ],
+      "formality": "very-low",
+      "density": "high",
+      "scheme": "mixed",
+      "best_for": "Credits, collaborators, tool stacks, references, sponsor walls, and closing slides.",
+      "avoid_for": "Slides needing one focused idea only.",
+      "preview_md": "nostalgia-template-pack/templates/badge-wall-88x31/preview.md",
+      "design_md": "nostalgia-template-pack/templates/badge-wall-88x31/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "bondi-aqua-boot",
+      "name": "Bondi Aqua Boot",
+      "taxonomy": "Y2K / Aqua / Frutiger Aero",
+      "preset": "aqua-gel",
+      "tagline": "Aqua pinstripes, gel buttons, candy progress bars, and translucent Bondi-blue optimism.",
+      "mood": [
+        "glossy",
+        "optimistic",
+        "friendly",
+        "techy"
+      ],
+      "tone": [
+        "bright",
+        "toy-like",
+        "welcoming",
+        "future-cute"
+      ],
+      "formality": "low",
+      "density": "low",
+      "scheme": "light",
+      "best_for": "Openers, product demos, playful tech talks, and early-2000s computer nostalgia.",
+      "avoid_for": "Serious or text-heavy analysis.",
+      "preview_md": "nostalgia-template-pack/templates/bondi-aqua-boot/preview.md",
+      "design_md": "nostalgia-template-pack/templates/bondi-aqua-boot/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "chrome-swoosh-hero",
+      "name": "Chrome Swoosh Hero",
+      "taxonomy": "Y2K / Aqua / Frutiger Aero",
+      "preset": "y2k-chrome",
+      "tagline": "Silver chrome ribbons, cyan glows, lens flares, italic tech headlines, and dotcom future hype.",
+      "mood": [
+        "futuristic",
+        "chrome",
+        "energetic",
+        "dotcom"
+      ],
+      "tone": [
+        "hyped",
+        "slick",
+        "cheesy",
+        "confident"
+      ],
+      "formality": "medium-low",
+      "density": "low",
+      "scheme": "dark",
+      "best_for": "Vision slides, product reveals, tech nostalgia, and anything that should feel like a 2001 Flash intro.",
+      "avoid_for": "Warm personal storytelling or quiet reading.",
+      "preview_md": "nostalgia-template-pack/templates/chrome-swoosh-hero/preview.md",
+      "design_md": "nostalgia-template-pack/templates/chrome-swoosh-hero/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "aero-sky-dashboard",
+      "name": "Aero Sky Dashboard",
+      "taxonomy": "Y2K / Aqua / Frutiger Aero",
+      "preset": "frutiger-aero",
+      "tagline": "Sky-to-grass gradient, bubbles, glass panels, leaf-green accents, and cheerful dashboard optimism.",
+      "mood": [
+        "fresh",
+        "glossy",
+        "nature-tech",
+        "optimistic"
+      ],
+      "tone": [
+        "clean-cheesy",
+        "friendly",
+        "hopeful",
+        "soft"
+      ],
+      "formality": "medium-low",
+      "density": "medium",
+      "scheme": "light",
+      "best_for": "Feature grids, roadmaps, product status, and early smart-device nostalgia.",
+      "avoid_for": "Anything needing gritty retro, old-web chaos, or monochrome discipline.",
+      "preview_md": "nostalgia-template-pack/templates/aero-sky-dashboard/preview.md",
+      "design_md": "nostalgia-template-pack/templates/aero-sky-dashboard/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "brushed-metal-player",
+      "name": "Brushed Metal Player",
+      "taxonomy": "Y2K / Aqua / Frutiger Aero",
+      "preset": "brushed-metal",
+      "tagline": "Aluminum texture, recessed displays, gel transport buttons, and early media-app chrome.",
+      "mood": [
+        "media",
+        "metal",
+        "tactile",
+        "2000s"
+      ],
+      "tone": [
+        "cool",
+        "gadgety",
+        "polished-cheesy",
+        "focused"
+      ],
+      "formality": "medium",
+      "density": "medium",
+      "scheme": "light",
+      "best_for": "Media showcases, demos, product walkthroughs, timelines, and decks about creative tools.",
+      "avoid_for": "Playful kid/classroom slides or loud old-web humor.",
+      "preview_md": "nostalgia-template-pack/templates/brushed-metal-player/preview.md",
+      "design_md": "nostalgia-template-pack/templates/brushed-metal-player/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "system-7-desktop",
+      "name": "System 7 Desktop",
+      "taxonomy": "System 7 / Kid Pix / Memphis",
+      "preset": "system-7-desktop",
+      "tagline": "Stippled desktop, Chicago-like menus, black 1px windows, dithered gray chrome, and zero blur.",
+      "mood": [
+        "mac",
+        "bitmap",
+        "classic",
+        "computer-lab"
+      ],
+      "tone": [
+        "precise",
+        "nostalgic",
+        "toy-serious",
+        "plain"
+      ],
+      "formality": "low",
+      "density": "medium",
+      "scheme": "light",
+      "best_for": "Software history, product specs, changelogs, workshops, and interface-centered decks.",
+      "avoid_for": "Glossy Y2K, corporate PowerPoint, or high-drama visuals.",
+      "preview_md": "nostalgia-template-pack/templates/system-7-desktop/preview.md",
+      "design_md": "nostalgia-template-pack/templates/system-7-desktop/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "kid-pix-canvas",
+      "name": "Kid Pix Canvas",
+      "taxonomy": "System 7 / Kid Pix / Memphis",
+      "preset": "kid-pix-canvas",
+      "tagline": "Tool palettes, stamp grids, paint-bucket colors, wacky brush marks, and cheerful pixel mess.",
+      "mood": [
+        "playful",
+        "childlike",
+        "creative",
+        "messy"
+      ],
+      "tone": [
+        "casual",
+        "silly",
+        "hands-on",
+        "bright"
+      ],
+      "formality": "very-low",
+      "density": "medium",
+      "scheme": "light",
+      "best_for": "Creative workshops, teaching, brainstorming, personal decks, and anything about making things by hand.",
+      "avoid_for": "High-stakes professional updates or restrained typography work.",
+      "preview_md": "nostalgia-template-pack/templates/kid-pix-canvas/preview.md",
+      "design_md": "nostalgia-template-pack/templates/kid-pix-canvas/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "about-this-macintosh",
+      "name": "About This Macintosh",
+      "taxonomy": "System 7 / Kid Pix / Memphis",
+      "preset": "about-this-mac",
+      "tagline": "System info dialog boxes, memory bars, tiny icons, version rows, and satisfying monochrome order.",
+      "mood": [
+        "dialog",
+        "technical",
+        "bitmap",
+        "tidy"
+      ],
+      "tone": [
+        "matter-of-fact",
+        "nerdy",
+        "cute",
+        "documentary"
+      ],
+      "formality": "medium-low",
+      "density": "high",
+      "scheme": "light",
+      "best_for": "Specs, architecture summaries, status reports, changelogs, and compact technical explanations with personality.",
+      "avoid_for": "Cinematic one-line slides or loud celebratory moments.",
+      "preview_md": "nostalgia-template-pack/templates/about-this-macintosh/preview.md",
+      "design_md": "nostalgia-template-pack/templates/about-this-macintosh/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "memphis-confetti-card",
+      "name": "Memphis Confetti Card",
+      "taxonomy": "System 7 / Kid Pix / Memphis",
+      "preset": "memphis-lab",
+      "tagline": "Primary shapes, squiggles, terrazzo dots, worksheet panels, and handmade desktop-publishing joy.",
+      "mood": [
+        "memphis",
+        "bright",
+        "crafty",
+        "school"
+      ],
+      "tone": [
+        "energetic",
+        "casual",
+        "graphic",
+        "fun"
+      ],
+      "formality": "low",
+      "density": "medium",
+      "scheme": "light",
+      "best_for": "Section openers, creative prompts, workshop slides, and casual explainers needing color without business polish.",
+      "avoid_for": "Authentic grayscale Mac UI or dark old-web pages.",
+      "preview_md": "nostalgia-template-pack/templates/memphis-confetti-card/preview.md",
+      "design_md": "nostalgia-template-pack/templates/memphis-confetti-card/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    }
+  ]
+}

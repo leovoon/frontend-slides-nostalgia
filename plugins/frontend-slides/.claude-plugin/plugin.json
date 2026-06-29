@@ -1,7 +1,7 @@
 {
   "name": "frontend-slides",
-  "version": "2.1.0",
-  "description": "Zero-dependency HTML presentation generator with safe presets, bold template-library styles, PPT conversion, and anti-AI-slop design philosophy.",
+  "version": "3.0.0",
+  "description": "Zero-dependency HTML presentation generator with old-web, old-PowerPoint, Y2K/Aqua, and classic Mac nostalgia styles.",
   "skills": "./skills/",
   "author": {
     "name": "zarazhangrui",
@@ -10,5 +10,5 @@
   "homepage": "https://github.com/zarazhangrui/frontend-slides",
   "repository": "https://github.com/zarazhangrui/frontend-slides",
   "license": "MIT",
-  "keywords": ["presentations", "slides", "html", "design", "powerpoint", "animations", "templates"]
+  "keywords": ["presentations", "slides", "html", "design", "powerpoint", "nostalgia", "geocities", "templates"]
 }
