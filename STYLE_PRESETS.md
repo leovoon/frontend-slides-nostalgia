@@ -365,6 +365,39 @@ This skill is intentionally **not** for professional or business-polished decks.
 
 ---
 
+## Southeast Asian Hawker / Vernacular Signage
+
+### 13. Hawker Stall Signage
+
+**Vibe:** Loud backlit street-food signboard from a Singapore/Malaysia hawker centre
+
+**Layout:** Glowing red/yellow lightbox panel, huge bilingual outlined title, numbered price grid, green certification badge, grommeted tarpaulin footer strip.
+
+**Typography:**
+- Display: `Anton` / `Archivo Black` / `Arial Black`
+- CJK: `Noto Sans SC` / `Noto Sans`
+- Body: `Noto Sans` / `Arial`
+
+**Colors:**
+```css
+:root {
+    --hawker-red: #e2231a;
+    --hawker-yellow: #ffd200;
+    --hawker-green: #0a8a3a;
+    --signage-black: #101010;
+    --lightbox-white: #ffffff;
+}
+```
+
+**Signature Elements:**
+- Backlit acrylic lightbox panel with thick black frame
+- Bilingual/trilingual outlined stall name
+- Numbered price grid with hard column rules
+- Halal / Established-Since certification badge
+- Grommeted vinyl tarpaulin banner footer
+
+---
+
 ## Font Pairing Quick Reference
 
 | Preset | Display Font | Body Font | Era |
@@ -381,6 +414,7 @@ This skill is intentionally **not** for professional or business-polished decks.
 | System 7 Desktop | Chicago | Geneva | System 7 |
 | Kid Pix Canvas | Chicago | Geneva / Comic Sans MS | Kid Pix |
 | Memphis Computer Lab | Arial Black | Geneva | Memphis |
+| Hawker Stall Signage | Anton / Archivo Black | Noto Sans / Arial | SE Asian Hawker |
 
 > Period fonts are not reliably web-served. Always provide a fallback chain (e.g. `"MS Sans Serif", Tahoma, Verdana, sans-serif`) and consider pixel/era webfonts like `VT323`, `Press Start 2P`, or `ChiKareGo2` for accents.
 

@@ -2,7 +2,7 @@
 
 Authentic old-web and old-PowerPoint design systems for `frontend-slides`.
 
-This pack is intentionally not polished, corporate, or business-safe. It is for slides that should feel hand-crafted in a computer lab, homepage editor, early-2000s media app, or classic Mac paint program.
+This pack is intentionally not polished, corporate, or business-safe. It is for slides that should feel hand-crafted in a computer lab, homepage editor, early-2000s media app, classic Mac paint program, or loud vernacular sign shop.
 
 ## What To Read
 
@@ -26,6 +26,7 @@ This pack is intentionally not polished, corporate, or business-safe. It is for 
 - **GeoCities / Web 1.0** — tiled backgrounds, centered tables, marquees, counters, blue links, 88×31 badges, visible bevels.
 - **Y2K / Aqua / Frutiger Aero** — chrome swooshes, gel buttons, sky/grass gradients, bubbles, brushed metal, early glossy UI.
 - **System 7 / Kid Pix / Memphis** — Mac menu bars, bitmap UI, dithered gray, Kid Pix tool palettes, primary-color stamps, Memphis confetti.
+- **Southeast Asian Hawker / Vernacular Signage** — backlit red/yellow lightboxes, bilingual outlined lettering, numbered price grids, certification badges, vinyl banners, and food-court legibility.
 
 ## How To Use In Frontend Slides
 

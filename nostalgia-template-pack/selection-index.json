@@ -2,7 +2,7 @@
   "schema_version": 2,
   "pack_name": "Nostalgia Template Pack",
   "directory": "nostalgia-template-pack",
-  "template_count": 16,
+  "template_count": 17,
   "usage": {
     "selection": "Read this compact index first to shortlist period-specific nostalgia templates from metadata.",
     "previews": "For title-slide previews, read only the preview_md files for shortlisted candidates.",
@@ -21,7 +21,8 @@
     "Office 97 / PowerPoint",
     "GeoCities / Web 1.0",
     "Y2K / Aqua / Frutiger Aero",
-    "System 7 / Kid Pix / Memphis"
+    "System 7 / Kid Pix / Memphis",
+    "Southeast Asian Hawker / Vernacular Signage"
   ],
   "templates": [
     {
@@ -455,6 +456,35 @@
       "preview_md": "nostalgia-template-pack/templates/memphis-confetti-card/preview.md",
       "design_md": "nostalgia-template-pack/templates/memphis-confetti-card/design.md",
       "readability_notes": "Keep the era-authentic look, but protect body readability with solid panels, sufficient contrast, and large type."
+    },
+    {
+      "slug": "hawker-stall-signage",
+      "name": "Southeast Asian Hawker Stall Signage",
+      "taxonomy": "Southeast Asian Hawker / Vernacular Signage",
+      "preset": "hawker-signage",
+      "tagline": "Backlit lightbox panels, bilingual bold lettering, numbered price grids, halal/established badges, and tarpaulin-banner street-food signage.",
+      "mood": [
+        "loud",
+        "vernacular",
+        "food-court",
+        "handmade",
+        "bustling"
+      ],
+      "tone": [
+        "direct",
+        "energetic",
+        "communal",
+        "practical",
+        "graphic"
+      ],
+      "formality": "low",
+      "density": "high",
+      "scheme": "warm-saturated",
+      "best_for": "Food, culture, travel, community talks, informal explainers, local commerce stories, menus-as-slides, and high-energy workshop decks needing loud vernacular graphic design.",
+      "avoid_for": "Minimal luxury decks, quiet editorial storytelling, dark technical diagrams, or material where food-market vernacular would feel culturally off-topic.",
+      "preview_md": "nostalgia-template-pack/templates/hawker-stall-signage/preview.md",
+      "design_md": "nostalgia-template-pack/templates/hawker-stall-signage/design.md",
+      "readability_notes": "Keep the era-authentic look, but protect body readability with solid framed panels, white/black outlined text on saturated grounds, and large type."
     }
   ]
 }

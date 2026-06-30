@@ -5,13 +5,13 @@ description: Create nostalgic, hand-crafted HTML presentations from scratch or b
 
 # Frontend Slides (Nostalgia Edition)
 
-Create zero-dependency HTML presentations that feel hand-built in an old computer lab — Office 97 PowerPoint, GeoCities homepages, Y2K/Aqua gloss, and classic Macintosh System 7. This skill is intentionally **not** for professional, corporate, or business-polished decks.
+Create zero-dependency HTML presentations that feel hand-built in an old computer lab, homepage editor, early-2000s media app, classic Macintosh paint program, or loud hawker-centre sign shop — Office 97 PowerPoint, GeoCities homepages, Y2K/Aqua gloss, System 7, and Southeast Asian vernacular signage. This skill is intentionally **not** for professional, corporate, or business-polished decks.
 
 ## Core Principles
 
 1. **Zero Dependencies** — Single HTML files with inline CSS/JS. No npm, no build tools.
 2. **Show, Don't Tell** — Generate visual previews, not abstract choices. People discover what they want by seeing it.
-3. **Authentic Nostalgia, Not Generic Retro** — Every deck must read as a specific era anchored to a real artifact (PowerPoint 97, GeoCities, FrontPage, Netscape, Aqua, Vista/Frutiger Aero, System 7, Kid Pix, Memphis). Authentic ugly is welcome; vague undated "retro" slop is not.
+3. **Authentic Nostalgia, Not Generic Retro** — Every deck must read as a specific era anchored to a real artifact (PowerPoint 97, GeoCities, FrontPage, Netscape, Aqua, Vista/Frutiger Aero, System 7, Kid Pix, Memphis, Southeast Asian hawker stall signage). Authentic ugly is welcome; vague undated "retro" slop is not.
 4. **Progressive Disclosure** — Read lightweight style indexes first. For nostalgia templates, use small preview cards for style previews and load the full `design.md` only after the user picks that template.
 5. **Fixed 16:9 Stage (NON-NEGOTIABLE)** — Every deck uses a 1920×1080 slide canvas scaled as a whole to the viewport. Slides must stay 16:9 on every screen, including phones. Do not reflow slide content to fit the device. Old-web fixed-width tables and desktop windows live *inside* the stage.
 6. **Readability Floor (NON-NEGOTIABLE)** — Authentic ugly, never unreadable. Body text ≥ 28px on the 1920×1080 stage, captions ≥ 18px, loud backgrounds get readable panels, and blink/marquee/sheen never carry primary meaning. Max two attention-grabbing animated effects per slide.
@@ -20,12 +20,13 @@ Create zero-dependency HTML presentations that feel hand-built in an old compute
 
 This skill commits to old-web and old-PowerPoint nostalgia. The risk here is not corporate "AI slop" but two opposite failures: (1) sanding the era into a tasteful modern "retro-inspired" deck, and (2) generic undated "retro" with no real artifact anchor. Avoid both. Commit to a specific era and make it look genuinely hand-built from that time.
 
-Four era families (see `STYLE_PRESETS.md` and the Nostalgia Template Pack):
+Five era families (see `STYLE_PRESETS.md` and the Nostalgia Template Pack):
 
 - **Office 97 / PowerPoint** — Arial / Times / Comic Sans / Impact, navy titles, teal AutoShapes, rainbow WordArt, Wingdings bullets, hard gray drop shadows, banded two-color gradients, bevel borders.
 - **GeoCities / Web 1.0** — tiled backgrounds, centered fixed-width tables, marquees, visitor counters, default blue/purple links, 88×31 badges, beveled gray buttons, Times/Comic Sans.
 - **Y2K / Aqua / Frutiger Aero** — chrome swooshes, gel pill buttons, candy progress bars, sky-to-grass gradients, bubbles, brushed metal, lens flares, glossy translucent panels.
 - **System 7 / Kid Pix / Memphis** — Mac menu bars and windows, 1px black borders, dithered gray (no blur), Kid Pix tool palettes and stamps, primary colors, Memphis confetti and squiggles, bitmap/integer type.
+- **Southeast Asian Hawker / Vernacular Signage** — backlit lightbox panels, saturated red/yellow signboards, bilingual heavy lettering, numbered price grids, halal/established badges, vinyl banners, grommets, food-court legibility.
 
 Focus on:
 
@@ -154,6 +155,7 @@ Read [STYLE_PRESETS.md](STYLE_PRESETS.md) for lightweight nostalgia preset candi
 | Excited/Loud          | WordArt Rainbow, GeoCities Homepage, Under Construction |
 | Glossy/Optimistic     | Aqua Gel, Frutiger Aero, Y2K Chrome                    |
 | Playful/Crafty        | Comic Sans Classroom, Kid Pix Canvas, Memphis Computer Lab |
+| Food/Culture/Local Commerce | Hawker Stall Signage, GeoCities Homepage, FrontPage Webmaster |
 
 **Preview mix rules:**
 

@@ -2,7 +2,7 @@
 
 A coding-agent skill for creating nostalgic, hand-crafted HTML presentations from scratch or by converting PowerPoint files. The core `SKILL.md` can be read by coding agents with filesystem and shell access.
 
-This edition is intentionally **not** for polished professional/business decks. It is for people who miss crafting PowerPoint slides by hand, making goofy homepage layouts, and letting a deck feel casual, personal, and visibly made.
+This edition is intentionally **not** for polished professional/business decks. It is for people who miss crafting PowerPoint slides by hand, making goofy homepage layouts, building loud vernacular signboards, and letting a deck feel casual, personal, and visibly made.
 
 Based on the original **Frontend Slides** skill by [Zara Zhang (@zarazhangrui)](https://github.com/zarazhangrui). This Nostalgia Edition reworks her project's styles and template pack into an old-web / old-PowerPoint aesthetic.
 
@@ -20,6 +20,11 @@ A few representative nostalgia directions from the template pack:
 | ![Frutiger Aero dashboard screenshot](docs/screenshots/aero-sky-dashboard.png) | ![System 7 Desktop screenshot](docs/screenshots/system-7-desktop.png) |
 | Sky/grass gradient, glossy bubbles, glass panel, green gel button. | Classic Mac menu bar, bitmap window chrome, pinstripe title bar, 1px borders. |
 
+| Southeast Asian Hawker / Vernacular Signage |
+| --- |
+| ![Southeast Asian Hawker Stall Signage screenshot](docs/screenshots/hawker-stall-signage.png) |
+| Backlit red/yellow lightbox, bilingual outlined title, price-grid menu, green certification badge. |
+
 ## What This Does
 
 **Frontend Slides** helps non-designers create zero-dependency web presentations without knowing CSS or JavaScript. It uses a "show, don't tell" approach: instead of asking you to describe your aesthetic preferences in words, it generates visual previews and lets you pick what feels right.
@@ -29,7 +34,7 @@ A few representative nostalgia directions from the template pack:
 - **Zero Dependencies** — Single HTML files with inline CSS/JS. No npm, no build tools, no frameworks.
 - **Visual Style Discovery** — Can't articulate design preferences? Pick from generated visual previews.
 - **PPT Conversion** — Convert existing PowerPoint files to web, preserving images and content.
-- **Nostalgia-First Design** — Office 97, GeoCities, FrontPage, Netscape, Aqua, Frutiger Aero, System 7, Kid Pix, and Memphis computer-lab styles.
+- **Nostalgia-First Design** — Office 97, GeoCities, FrontPage, Netscape, Aqua, Frutiger Aero, System 7, Kid Pix, Memphis computer-lab, and Southeast Asian hawker-stall vernacular signage styles.
 - **Authentic Ugly, Still Readable** — Comic Sans, WordArt, bevels, tiled backgrounds, marquees, counters, bitmap windows, and glossy gel buttons are allowed. Unreadable text is not.
 - **Fixed 16:9 Stage** — Every slide is authored at 1920×1080 and scaled as a whole to fit the viewport.
 
@@ -136,9 +141,13 @@ The skill will:
 - **Kid Pix Canvas** — Tool palette, stamps, spray speckles, crayon colors.
 - **Memphis Computer Lab** — Confetti, squiggles, worksheet cards, primary shapes.
 
+**Southeast Asian Hawker / Vernacular Signage**
+
+- **Hawker Stall Signage** — Backlit red/yellow lightbox, bilingual outlined lettering, numbered price grid, certification badge, tarpaulin footer.
+
 ### Nostalgia Template Pack
 
-The heavier [`nostalgia-template-pack`](nostalgia-template-pack/selection-index.json) includes 16 detailed design systems:
+The heavier [`nostalgia-template-pack`](nostalgia-template-pack/selection-index.json) includes 17 detailed design systems:
 
 1. `office-97-title`
 2. `powerpoint-blue-daybreak`
@@ -156,6 +165,7 @@ The heavier [`nostalgia-template-pack`](nostalgia-template-pack/selection-index.
 14. `kid-pix-canvas`
 15. `about-this-macintosh`
 16. `memphis-confetti-card`
+17. `hawker-stall-signage`
 
 Each template has:
 
